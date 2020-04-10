@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dr. Norman Borlaug</title>
+
+    <!--CSS and JS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../script/script.js"></script>
+
+    <!-- Adding Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+
+    <div id="container-nav">
+        <nav>
+            <a id="nav-bio" class="link-item" href="#" onclick="smoothScroll(document.getElementById('section-bio'))">Bio</a>
+            <a id="nav-awards" class="link-item" href="#" onclick="smoothScroll(document.getElementById('section-awards'))">Awards</a>
+            <a id="nav-timeline" class="link-item" href="#" onclick="smoothScroll(document.getElementById('headline'))">Timeline</a>
+        </nav>
+    </div>
+
+    <!-- Hero -->
+
+    <section class="hero">
+        <div class="hero-inner">
+            <h1 id="main-heading">Dr. Norman Borlaug</h1>
+            <img id="hero-image" src="../img/hero-image.jpg" alt="Photo of Dr. Norman Ernest Borlaug from 2004">
+            <h2 id="sub-heading">The man who saved a billion lives</h2>
+            <a href="#" class="btn" onclick="smoothScroll(document.getElementById('container-bio'))">Read More</a>
+        </div>
+    </section>
+    
+    <!-- Biography Section -->
+
+    <section id="section-bio">
+        <img id="bio-image" src="../img/bio-image.jpg" alt="Portait photo of Dr. Norman Ernest Borlaug">
+        <div>
+            <article class="panel" id="biography-title">
+                <h3 id="bio-title">Biography</h3>
+            </article>
+            <p id="bio-text">
+                Norman Ernest Borlaug (March 25, 1914 – September 12, 2009) was an American agronomist who led initiatives worldwide that contributed to the extensive increases in agricultural production termed the Green Revolution. Borlaug was awarded multiple honors for his work, including the Nobel Peace Prize, the Presidential Medal of Freedom and the Congressional Gold Medal.
+
+                Borlaug received his B.S. in forestry in 1937 and Ph.D. in plant pathology and genetics from the University of Minnesota in 1942. He took up an agricultural research position in Mexico, where he developed semi-dwarf, high-yield, disease-resistant wheat varieties. During the mid-20th century, Borlaug led the introduction of these high-yielding varieties combined with modern agricultural production techniques to Mexico, Pakistan, and India. As a result, Mexico became a net exporter of wheat by 1963. Between 1965 and 1970, wheat yields nearly doubled in Pakistan and India, greatly improving the food security in those nations.
+                
+                Borlaug was often called "the father of the Green Revolution", and is credited with saving over a billion people worldwide from starvation. According to Jan Douglas, executive assistant to the president of the World Food Prize Foundation, the source of this number is Gregg Easterbrook's 1997 article "Forgotten Benefactor of Humanity." The article states that the "form of agriculture that Borlaug preaches may have prevented a billion deaths." He was awarded the Nobel Peace Prize in 1970 in recognition of his contributions to world peace through increasing food supply.
+                
+                Later in his life, he helped apply these methods of increasing food production in Asia and Africa</p>
+        </div>  
+    </section>
+
+    <!-- Awards Section -->
+
+    <section id="section-awards">        
+        <div>
+            <div id="container-title">
+                <h4 id="awards-title">Awards</h4>
+            </div>
+            <div class="card-container">
+                <div class="awards">
+                    <div class="award-image">
+                      <img src="../img/Nobel_Prize.png" alt="Nobel peace prize">
+                    </div>
+                    <div class="description">
+                      <h2>Nobel Peace Prize</h2>
+                      <p>In 1970, he was awarded the Nobel Peace Prize by the Norwegian Nobel Committee "for his contributions to the 'green revolution' that was having such an impact on food production particularly in Asia and in Latin America."</p>
+                    </div>
+                </div>
+                <div class="awards">
+                    <div class="award-image">
+                        <img src="../img/medal-of-freedom.png" alt="The Presidential Medal of freedom">
+                    </div>
+                    <div class="description">
+                      <h2>U.S. Presidential Medal of Freedom</h2>
+                      <p>In addition to the Nobel Prize, Borlaug received the 1977 U.S. Presidential Medal of Freedom,
+                      </p>
+                      </div>
+                  </div>
+                  <div class="awards">
+                      <div class="award-image">
+                        <img src="../img/dove-medal.png" alt="Peace medal">
+                      </div>
+                      <div class="description">
+                        <h2>Peace Medal</h2>
+                        <p>In 1974, he was awarded a Peace Medal (in the form of a dove, carrying a wheat ear in its beak) by Haryana Agricultural University, Hisar, India.
+                        </p>
+                      </div>
+                  </div>
+                  <p id="awards-text">Borlaug was awarded multiple honors for his work, including the Nobel Peace Prize, the Presidential Medal of Freedom and the Peace Medal.You can read more about awards he received <a id="awards-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug#Honors_and_awards" target="_blank"><span class="awards-span">here</span></a>.</p>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+
+    <section id="section-timeline">
+        <div id="img-div">
+            <img id="image" src="../img/timeline-image.jpg" alt="Photo of Dr. Norman Borlaug training biologists in Mexico">
+            <figcaption id="img-caption">
+                Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.
+            </figcaption>
+        </div>
+        <div id="timeline-info">
+            <h3 id="headline">Here's a time line of Dr. Borlaug's life:</h3>
+            <ul>
+                <li><strong>1914</strong> - Born in Cresco, Iowa</li>
+                <li><strong>1933</strong> - Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration"</li>
+                <li><strong>1935</strong> - Has to stop school and save up more money. Works in the Civilian Conservation Corps, helping starving Americans. "I saw how food changed them", he said. "All of this left scars on me."</li>
+                <li><strong>1937</strong> - Finishes university and takes a job in the US Forestry Service</li>
+                <li><strong>1938</strong> - Marries wife of 69 years Margret Gibson. Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman, he returns to school study under Stakman, who teaches him about breeding pest-resistent plants.</li>
+                <li><strong>1941</strong> - Tries to enroll in the military after the Pearl Harbor attack, but is rejected. Instead, the military asked his lab to work on waterproof glue, DDT to control malaria, disinfectants, and other applied science.</li>
+                <li><strong>1942</strong> - Receives a Ph.D. in Genetics and Plant Pathology</li>
+                <li><strong>1944</strong> - Rejects a 100% salary increase from Dupont, leaves behind his pregnant wife, and flies to Mexico to head a new plant pathology program. Over the next 16 years, his team breeds 6,000 different strains of disease resistent wheat - including different varieties for each major climate on Earth.</li>
+                <li><strong>1945</strong> - Discovers a way to grown wheat twice each season, doubling wheat yields</li>
+                <li><strong>1953</strong> - crosses a short, sturdy dwarf breed of wheat with a high-yeidling American breed, creating a strain that responds well to fertilizer. It goes on to provide 95% of Mexico's wheat.</li>
+                <li><strong>1962</strong> - Visits Delhi and brings his high-yielding strains of wheat to the Indian subcontinent in time to help mitigate mass starvation due to a rapidly expanding population</li>
+                <li><strong>1970</strong> - receives the Nobel Peace Prize</li>
+                <li><strong>1983</strong> - helps seven African countries dramatically increase their maize and sorghum yields</li>
+                <li><strong>1984</strong> - becomes a distinguished professor at Texas A&M University</li>
+                <li><strong>2005</strong> - states "we will have to double the world food supply by 2050." Argues that genetically modified crops are the only way we can meet the demand, as we run out of arable land. Says that GM crops are not inherently dangerous because "we've been genetically modifying plants and animals for a long time. Long before we called it science, people were selecting the best breeds."</li>
+                <li><strong>2009</strong> - dies at the age of 95.</li>
+            </ul>
+        </div>
+        
+        <!-- Quote Section -->
+
+        <div class="quote-container">
+            <blockquote cite="Indian Prime Minister Manmohan Singh">Borlaug's life and achievement are testimony to the far-reaching contribution that one man's towering intellect, persistence and scientific vision can make to human peace and progress.</blockquote>
+          </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <section id="section-footer">
+        <div id="container-footer">
+            <footer>
+                <h3>If you have time, you should read more about this incredible human being on his <a id="link-wiki" target="_blank" href="https://en.wikipedia.org/wiki/Norman_Borlaug"><span id="wiki-text">Wikipedia entry</span></a>. </h3>
+            </footer>
+        </div>  
+    </section>
+
+</body>
+</html>
