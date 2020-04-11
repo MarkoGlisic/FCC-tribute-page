@@ -270,40 +270,40 @@ figcaption {
     margin-bottom: 2em;
     font-size: 18px;
 }
-  
-  p { margin-bottom: 1.5em; }
-  p:last-child { margin-bottom: 0; }
-  
-  blockquote {
-    display: block;
-    border-width: 2px 0;
-    border-style: solid;
-    border-color: #eee;
-    padding: 1.5em 0 0.5em;
-    margin: 1.5em 0;
-    position: relative;
-  }
-  blockquote:before {
-    content: '\201C';
-    position: absolute;
-    top: 0em;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    width: 3rem;
-    height: 2rem;
-    font: 6em/1.08em 'PT Sans', sans-serif;
-    color: #666;
-    text-align: center;
-  }
-  blockquote:after {
-    content: "\2013 \2003" attr(cite);
-    display: block;
-    text-align: right;
-    font-size: 0.875em;
-    color: #e74c3c;
-  }
 
+p { margin-bottom: 1.5em; }
+p:last-child { margin-bottom: 0; }
+
+blockquote {
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #eee;
+  padding: 1.5em 0 0.5em;
+  margin: 1.5em 0;
+  position: relative;
+}
+blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  color: #666;
+  text-align: center;
+}
+blockquote:after {
+  content: "\2013 \2003" attr(cite);
+  display: block;
+  text-align: right;
+  font-size: 0.875em;
+  color: #e74c3c;
+}
+ 
 /* Footer style */
 
 #container-footer {
@@ -370,14 +370,84 @@ footer {
 /* Media queries for 200px to 767px width devices (covers all mobile devices) */
 
 @media only screen and (min-width: 200px) and (max-width: 767px)  {
+    
+    nav {
+        justify-content: center;
+    }
+
+    #main-heading {
+        font-size: 3em;
+    }
+
+    #sub-heading {
+        font-size: 1.8em;
+    }
+    
     #bio-image {
         display: none;
+    }
+
+    #bio-text {
+        font-size: 12px;
+        padding-top: 2px;
+        margin: 0;
+    }
+
+    #awards-text {
+        font-size: 14px;
+    }
+
+    #image {
+        width: 100%;
+    }
+
+    #img-caption {
+        font-size: 14px;
+    }
+
+    #headline {
+        font-size: 1.8em;
+    }
+
+    #timeline-info ul {
+        font-size: 14px;
+    }
+
+    .quote-container {
+        font-size: 14px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #section-footer {
+        font-size: 12px;
+    }
+    #section-footer h3 {
+        padding-left: 10px;
     }
 }
 
 /* Media queries for 768px to 1024px width devices (covers all iPad / tablet devices) */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px)  {
-        
+    #bio-image {
+        display: none;
+    }
+
+    #bio-text {
+        font-size: 15px;
+    }
+
+    #img-caption {
+        font-size: 15px;
+    }
     
+}
+
+/* Media queries for 1024px to 1168px width devices (covers all laptop devices) */
+
+@media only screen and (min-width: 1024px) and (max-width: 1168px)  {
+    #bio-text {
+        font-size: 16px;
+    }
 }
